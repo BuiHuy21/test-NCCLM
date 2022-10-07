@@ -1,0 +1,160 @@
+*{
+        margin: 0;      
+        padding: 0;
+        box-sizing: border-box; 
+}
+body{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+}
+a{
+        text-decoration: none;
+}
+
+ul li{
+        list-style-type: none;
+}
+.wrapper{
+        display: flex;
+        width: 1918px;
+        height:935px;
+        background-color: #fff;
+}
+/* sidebar */
+
+.sidebar{
+        width:150px;
+        background-color: #191718;
+}
+
+
+.sidebar ul li{
+        border-bottom: 1px solid #5C5C5C;
+        padding:14px 94px 11px 16px;
+}
+.sidebar ul li:hover a{
+        color: #ffffff;
+        text-decoration:underline;
+}
+.sidebar ul li:hover {
+        background-color: #5c5c5c;
+}
+.sidebar ul li a{
+        text-decoration: none;
+        color: #aaaaaa;
+        font-size: 16px;
+        font-weight: 700;
+}
+.sidebar >ul> li:first-child a{
+        color: #ffffff;
+}
+
+/* content */
+.content{
+        width: 1768px;
+}
+.container{
+        max-width:1510px;
+        margin:0 auto;
+}
+
+.container .logo{
+       text-align: center;
+       padding-top: 20px;
+       padding-bottom: 30px;
+       cursor: pointer;
+}
+.container .logo img{
+        width: 310px;
+        height: 122px;
+}
+.container .content-main{
+        background-color: #EFEFEF;
+        margin-bottom: 40px;
+
+      
+}
+.container .content-main span{
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 38px;
+        padding-bottom: 18px;
+}
+.content-desc  {
+       
+        max-width: 972px;
+        margin: 0 auto;
+        padding-bottom: 38px;
+}
+.application{
+        display: flex;
+        gap:50px;
+       
+}
+
+.application .display-list .heading{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 18px;
+}
+.application .display-list{
+        min-width: 30%;
+}
+.application .application-item img{
+        width: 128px;
+        height: 128px;
+        float: left;
+        cursor: pointer;
+}
+.application .application-item p{
+        font-size: 16px;
+        font-weight: 400;
+}
+
+
+/* footer */
+
+.footer{
+        bottom:0;
+        border-top:1px solid #DEDEDE;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 212px;
+        padding: 30px;
+}
+
+
+@media  screen and (max-width: 1023px){
+        .sidebar{
+                display: none;
+        }
+         .content{
+                width:1020px
+         }
+         .container{
+                max-width:1020px;
+                margin:0 auto;
+        }
+        .content-desc  {
+       
+                max-width: 650px;
+                margin: 0 auto;
+                padding-bottom: 38px;
+        }
+        .application{
+                display: flex;
+                gap:50px;
+                flex-direction: column;
+               
+        }
+        .application .application-item p{
+                font-size: 16px;
+                font-weight: 400;
+                max-width: 950px;
+        }
+        .application .display-list{
+               padding: 10px;
+        }
+}
